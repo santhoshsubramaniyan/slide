@@ -1,0 +1,107 @@
+/* select a font */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --clr-sky-blue: #8ecae6ff;
+  --clr-blue-green: #219ebcff;
+  --clr-prussian-blue: #023047ff;
+  --clr-selective-yellow: #ffb703ff;
+  --clr-ut-orange: #fb8500ff;
+  --ff-roboto: "Roboto", sans-serif;
+  --ff-noto-sans: "Noto Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  --max-width: 1170px;
+  --fixed-width: 450px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-roboto);
+  background: url(../images/reviews-bg.png);
+}
+
+.bg-cont {
+  background-image: url(./image/reviews-bg.png);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 30px;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+
+.arrow {
+  height: 40px;
+  background-color: transparent;
+  border-width: 0;
+}
+
+.reviews-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 2rem;
+}
+
+.user-name {
+  color: #fff;
+  font-size: 15px;
+  font-family: var(--ff-noto-sans);
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.company-name,
+.review {
+  color: #171f46;
+  font-size: 15px;
+  font-family: var(--ff-noto-sans);
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 500px;
+  }
+}
